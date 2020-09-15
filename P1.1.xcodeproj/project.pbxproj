@@ -15,6 +15,8 @@
 		B0AFD005250EF36000570AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AFD003250EF36000570AA7 /* LaunchScreen.storyboard */; };
 		B0AFD010250EF36000570AA7 /* P1_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFD00F250EF36000570AA7 /* P1_1Tests.swift */; };
 		B0AFD01B250EF36000570AA7 /* P1_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFD01A250EF36000570AA7 /* P1_1UITests.swift */; };
+		B0AFD029250F0A2000570AA7 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFD028250F0A2000570AA7 /* CountDown.swift */; };
+		B0AFD02B251063CC00570AA7 /* GuessANumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFD02A251063CC00570AA7 /* GuessANumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B0AFD016250EF36000570AA7 /* P1.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P1.1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AFD01A250EF36000570AA7 /* P1_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P1_1UITests.swift; sourceTree = "<group>"; };
 		B0AFD01C250EF36000570AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0AFD028250F0A2000570AA7 /* CountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
+		B0AFD02A251063CC00570AA7 /* GuessANumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessANumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				B0AFCFF8250EF35E00570AA7 /* AppDelegate.swift */,
 				B0AFCFFA250EF35E00570AA7 /* SceneDelegate.swift */,
+				B0AFD02A251063CC00570AA7 /* GuessANumber.swift */,
 				B0AFCFFC250EF35E00570AA7 /* ViewController.swift */,
 				B0AFCFFE250EF35E00570AA7 /* Main.storyboard */,
 				B0AFD001250EF36000570AA7 /* Assets.xcassets */,
 				B0AFD003250EF36000570AA7 /* LaunchScreen.storyboard */,
 				B0AFD006250EF36000570AA7 /* Info.plist */,
+				B0AFD028250F0A2000570AA7 /* CountDown.swift */,
 			);
 			path = P1.1;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			files = (
 				B0AFCFFD250EF35E00570AA7 /* ViewController.swift in Sources */,
 				B0AFCFF9250EF35E00570AA7 /* AppDelegate.swift in Sources */,
+				B0AFD02B251063CC00570AA7 /* GuessANumber.swift in Sources */,
 				B0AFCFFB250EF35E00570AA7 /* SceneDelegate.swift in Sources */,
+				B0AFD029250F0A2000570AA7 /* CountDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
