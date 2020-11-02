@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="P1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-aT-MgM">
+                                <rect key="frame" x="20" y="116" width="339" height="236"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="nGL-gf-NeT"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="zPk-Ja-YT6">
+                                        <rect key="frame" x="0.0" y="28" width="339" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zPk-Ja-YT6" id="s27-ri-RR5">
+                                            <rect key="frame" x="0.0" y="0.0" width="339" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bYW-1D-QUN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BhB-V4-D6X"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjL-sT-YY5">
+                                <rect key="frame" x="101" y="20" width="172" height="57"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add A Picture">
+                                    <color key="titleShadowColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bXF-4y-dbC"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mkw-B1-zkR">
+                                <rect key="frame" x="16" y="368" width="343" height="279"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll down on the table to see the pictures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAk-Ge-rNd">
+                                <rect key="frame" x="20" y="85" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZAk-Ge-rNd" firstAttribute="leading" secondItem="LMW-aT-MgM" secondAttribute="leading" id="1tQ-vV-fwx"/>
+                            <constraint firstItem="ZAk-Ge-rNd" firstAttribute="trailing" secondItem="LMW-aT-MgM" secondAttribute="trailing" id="EUe-dC-P1j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LMW-aT-MgM" secondAttribute="bottom" constant="315" id="F0j-6g-VRj"/>
+                            <constraint firstItem="LMW-aT-MgM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qra-5q-1jw"/>
+                            <constraint firstItem="tjL-sT-YY5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TuQ-wX-0cI"/>
+                            <constraint firstItem="tjL-sT-YY5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UQd-Nq-6QG"/>
+                            <constraint firstItem="LMW-aT-MgM" firstAttribute="top" secondItem="tjL-sT-YY5" secondAttribute="bottom" constant="39" id="VEj-Th-zSg"/>
+                            <constraint firstItem="tjL-sT-YY5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="a6n-aJ-zjq"/>
+                            <constraint firstItem="mkw-B1-zkR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gZ9-rS-f7x"/>
+                            <constraint firstItem="LMW-aT-MgM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jdf-XT-1Fx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mkw-B1-zkR" secondAttribute="trailing" constant="16" id="rCi-xu-Kkt"/>
+                            <constraint firstItem="mkw-B1-zkR" firstAttribute="top" secondItem="LMW-aT-MgM" secondAttribute="bottom" constant="16" id="sXq-6q-Tyb"/>
+                            <constraint firstItem="ZAk-Ge-rNd" firstAttribute="top" secondItem="tjL-sT-YY5" secondAttribute="bottom" constant="8" id="uaT-I0-JLJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mkw-B1-zkR" secondAttribute="bottom" constant="20" id="zOm-jK-FxX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="mkw-B1-zkR" id="ELd-8J-joh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="91.304347826086968"/>
+        </scene>
+    </scenes>
+</document>
